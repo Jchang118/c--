@@ -15,7 +15,7 @@ class complex
         double re, im;
 
         friend complex& __doapl (complex*, const complex&); // 友元函数可以直接access private的数据, 第一个参数是指针而非引用是因为需要通过 指针->member 直接读取private的数据  
-}
+};
 
 inline complex&
 __doapl (complex* ths, const complex& r)
